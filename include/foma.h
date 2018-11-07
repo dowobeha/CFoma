@@ -36,7 +36,7 @@ struct stack_entry {
   struct stack_entry *next;
   struct stack_entry *previous;    
 };
-
+int swift_demo();
 /* Quantifier & Logic-related */
 char *find_quantifier(char *string);
 void add_quantifier (char *string);
