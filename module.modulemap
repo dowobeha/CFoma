@@ -1,4 +1,4 @@
-module CFoma [system] {
+module CFoma {
     umbrella header "include/CFoma.h"
 
     export *
