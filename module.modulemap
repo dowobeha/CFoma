@@ -1,5 +1,5 @@
-module CFoma [system] [extern_c] {
-
+module CFoma {
+    umbrella header "include/CFoma.h"
     header "fomalib.h"
     export *
 }
