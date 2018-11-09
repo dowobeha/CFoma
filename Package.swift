@@ -11,7 +11,7 @@ let package = Package(
       targets: ["CFoma"]),
   ],
   dependencies: [],
-  targets: [ .target(name: "CFoma", path=".") ]
+  targets: [ .target(name: "CFoma", path: ".") ]
 
 )
 
