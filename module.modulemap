@@ -1,5 +1,5 @@
-module CFoma {
+module CFoma [system] {
     umbrella header "include/CFoma.h"
-
+    link "foma"
     export *
 }
