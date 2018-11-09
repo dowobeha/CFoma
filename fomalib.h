@@ -22,7 +22,7 @@ extern "C" {
 #include <inttypes.h>
 #include <string.h>
 #include "zlib.h"
-
+int swift_demo();
 #define INLINE inline
 
 #define FEXPORT __attribute__((visibility("default")))
