@@ -14,3 +14,6 @@ let package = Package(
   targets: [ .systemLibrary(name: "CFoma", path: ".") ]
 
 )
+
+
+//    umbrella header "include/CFoma.h"
