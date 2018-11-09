@@ -1,4 +1,5 @@
 module CFoma {
     header "fomalib.h"
+    link "CFoma"
     export *
 }
