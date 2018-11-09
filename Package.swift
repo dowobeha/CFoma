@@ -11,6 +11,6 @@ let package = Package(
       targets: ["CFoma"]),
   ],
   dependencies: [],
-  targets: [ .target(name: "CFoma", path: ".") ]
+  targets: [ .systemLibrary(name: "CFoma", path: ".") ]
 
 )
