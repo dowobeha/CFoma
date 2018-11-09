@@ -1,0 +1,5 @@
+framework module CFoma {
+    header "include/CFoma.h"
+    
+    private header "fomalib.h"
+}
