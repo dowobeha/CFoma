@@ -1,3 +1,4 @@
-framework module CFoma {
-    private header "fomalib.h"
+module CFoma [extern_c] {
+    header "fomalib.h"
+    export *
 }
