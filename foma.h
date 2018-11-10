@@ -15,7 +15,8 @@
 /*   See the License for the specific language governing permissions and       */
 /*   limitations under the License.                                            */
 
-#include "fomalib.h"
+//#include "fomalib.h"
+#include "include/CFoma.h"
 
 #define AP_D 1 /* Apply down */
 #define AP_U 2 /* Apply up   */
