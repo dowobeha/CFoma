@@ -1,6 +1,0 @@
-module CFoma {
-    umbrella header "include/CFoma.h"
-    header "myfomalib.h"
-
-    export *
-}
