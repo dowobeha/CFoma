@@ -15,7 +15,8 @@
 /*   See the License for the specific language governing permissions and       */
 /*   limitations under the License.                                            */
 
-#include "fomalib.h"
+//#include "fomalib.h"
+#include "include/CFoma.h"
 
 #define THASH_TABLESIZE 1048573
 #define TRIE_STATESIZE 32768
