@@ -1,7 +1,7 @@
  
 //#include "lexc.h"
 //#include "regex.h"
-#include "fomalib.h"
+#include "myfomalib.h"
 //#include "fomalibconf.h"
 /*
 #include "foma.h"
