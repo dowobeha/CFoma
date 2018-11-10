@@ -1,6 +1,6 @@
  
 #include <stdio.h>
-#include <inttypes.h>
+//#include <inttypes.h>
 #include <string.h>
 #include "zlib.h"
 
