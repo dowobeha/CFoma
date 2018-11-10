@@ -1,6 +1,8 @@
  
 #include <stdio.h>
-//#include <inttypes.h>
+#if defined(__linux__)
+#include <inttypes.h>
+#endif
 #include <string.h>
 #include "zlib.h"
 
