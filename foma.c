@@ -22,8 +22,9 @@
 #include <getopt.h>
 #include <time.h>
 #include <readline/readline.h>
-#include "foma.h"
 */
+#include "foma.h"
+
 // Front-end behavior variables 
 int pipe_mode = 0;
 int quiet_mode = 0;
@@ -34,7 +35,7 @@ int apply_direction;
 
 // Variable to pass the position of rl completion to our completer 
 static int smatch;
-/*
+
 char *usagestring = "Usage: foma [-e \"command\"] [-f run-once-script] [-l startupscript] [-p] [-q] [-s] [-v]\n";
 
 static char** my_completion(const char*, int ,int);
@@ -60,10 +61,10 @@ static char *command = (char *)NULL;
 char *flex_command = NULL;
 static char *line_read = (char *)NULL;
 char no_readline_line[512]; */
-int swift_demo() { return 7; } /*
+int swift_demo() { return 7; } 
 // Read a string, and return a pointer to it.
-   Returns NULL on EOF. 
-
+//   Returns NULL on EOF. 
+/*
 char *rl_gets(char *prompt) {
     
     // If the buffer has already been allocated,
