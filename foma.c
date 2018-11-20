@@ -1,20 +1,20 @@
-/*   Foma: a finite-state toolkit and library.                                 */
-/*   Copyright © 2008-2015 Mans Hulden                                         */
+//   Foma: a finite-state toolkit and library.                                 
+//   Copyright © 2008-2015 Mans Hulden                                         
 
-/*   This file is part of foma.                                                */
+//   This file is part of foma.                                                
 
-/*   Licensed under the Apache License, Version 2.0 (the "License");           */
-/*   you may not use this file except in compliance with the License.          */
-/*   You may obtain a copy of the License at                                   */
+//   Licensed under the Apache License, Version 2.0 (the "License");           
+//   you may not use this file except in compliance with the License.          
+//   You may obtain a copy of the License at                                   
 
-/*      http://www.apache.org/licenses/LICENSE-2.0                             */
+//      http://www.apache.org/licenses/LICENSE-2.0                             
 
-/*   Unless required by applicable law or agreed to in writing, software       */
-/*   distributed under the License is distributed on an "AS IS" BASIS,         */
-/*   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  */
-/*   See the License for the specific language governing permissions and       */
-/*   limitations under the License.                                            */
-
+//   Unless required by applicable law or agreed to in writing, software       
+//   distributed under the License is distributed on an "AS IS" BASIS,         
+//   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  
+//   See the License for the specific language governing permissions and       
+//   limitations under the License.                                            
+/*
 #include <stdlib.h>
 #include <stdio.h>
 #include <ctype.h>
@@ -24,7 +24,7 @@
 #include <readline/readline.h>
 #include "foma.h"
 
-/* Front-end behavior variables */
+// Front-end behavior variables 
 int pipe_mode = 0;
 int quiet_mode = 0;
 static int use_readline = 1;
@@ -32,7 +32,7 @@ static int use_readline = 1;
 int promptmode = PROMPT_MAIN;
 int apply_direction;
 
-/* Variable to pass the position of rl completion to our completer */
+// Variable to pass the position of rl completion to our completer 
 static int smatch;
 
 char *usagestring = "Usage: foma [-e \"command\"] [-f run-once-script] [-l startupscript] [-p] [-q] [-s] [-v]\n";
@@ -43,7 +43,7 @@ char *cmd [] = {"ambiguous upper","apply down","apply med","apply up","apropos",
 
 char *abbrvcmd [] = {"ambiguous","close","down","up","med","size","loadd","lower-words","upper-words","net","random-lower","random-upper","words","random-words","regex","rpl","au revoir","bye","exit","saved","seq","ss","stack","tunam","tid","tfu","tlu","tuu","tnu","tnn","tseq","tsf","equ","pss","psz","ratt","tfd","hyvästi","watt","wpl","examb","exunamb","pairs","random-pairs",NULL};
 
-/* #include "yy.tab.h" */
+// #include "yy.tab.h" 
 
 int view_net(struct fsm *net);
 
@@ -54,20 +54,20 @@ void print_help();
 void xprintf(char *string) { return ; printf("%s",string); }
 char disclaimer[] = "Foma, version 0.9.18alpha\nCopyright © 2008-2015 Mans Hulden\nThis is free software; see the source code for copying conditions.\nThere is ABSOLUTELY NO WARRANTY; for details, type \"help license\"\n\nType \"help\" to list all commands available.\nType \"help <topic>\" or help \"<operator>\" for further help.\n\n";
 
-/* A static variable for holding the line. */
+// A static variable for holding the line. 
 
 static char *command = (char *)NULL;
 char *flex_command = NULL;
 static char *line_read = (char *)NULL;
-char no_readline_line[512];
-int swift_demo() { return 7; }
-/* Read a string, and return a pointer to it.
-   Returns NULL on EOF. */
+char no_readline_line[512]; */
+int swift_demo() { return 7; } /*
+// Read a string, and return a pointer to it.
+   Returns NULL on EOF. 
 
 char *rl_gets(char *prompt) {
     
-    /* If the buffer has already been allocated,
-       return the memory to the free pool. */
+    // If the buffer has already been allocated,
+       return the memory to the free pool. 
     if (use_readline == 1) {
         if (line_read) {
             free(line_read);
@@ -84,8 +84,8 @@ char *rl_gets(char *prompt) {
         line_read = readline(prompt);
     }
     
-    /* If the line has any text in it,
-       save it on the history. */
+    // If the line has any text in it,
+       save it on the history. 
     if (use_readline == 1) {
         if (line_read && *line_read)
             add_history(line_read);        
@@ -134,7 +134,7 @@ char *my_generator(const char *text, int state) {
 
         if (strncmp (name, text, len) == 0) {
             nummatches++;            
-            /* Can't use xxstrdup here */
+            // Can't use xxstrdup here 
             return(strdup(name+smatch));
         }
     }
@@ -143,12 +143,13 @@ char *my_generator(const char *text, int state) {
         while ((name = abbrvcmd[list_index2])) {
             list_index2++;
             
-            /* Can't use xxstrdup here */
+            // Can't use xxstrdup here 
             if (strncmp (name, text, len) == 0)
                 return(strdup(name+smatch));
         }        
     }
     
-    /* If no names matched, then return NULL. */
+    // If no names matched, then return NULL. 
     return ((char *)NULL);
 }
+*/
