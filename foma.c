@@ -23,7 +23,7 @@
 #include <time.h>
 #include <readline/readline.h>
 #include "foma.h"
-
+*/
 // Front-end behavior variables 
 int pipe_mode = 0;
 int quiet_mode = 0;
@@ -34,7 +34,7 @@ int apply_direction;
 
 // Variable to pass the position of rl completion to our completer 
 static int smatch;
-
+/*
 char *usagestring = "Usage: foma [-e \"command\"] [-f run-once-script] [-l startupscript] [-p] [-q] [-s] [-v]\n";
 
 static char** my_completion(const char*, int ,int);
