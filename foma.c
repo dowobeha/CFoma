@@ -60,7 +60,7 @@ char disclaimer[] = "Foma, version 0.9.18alpha\nCopyright © 2008-2015 Mans Huld
 static char *command = (char *)NULL;
 char *flex_command = NULL;
 static char *line_read = (char *)NULL;
-char no_readline_line[512]; */
+char no_readline_line[512]; 
 int swift_demo() { return 7; } 
 // Read a string, and return a pointer to it.
 //   Returns NULL on EOF. 
